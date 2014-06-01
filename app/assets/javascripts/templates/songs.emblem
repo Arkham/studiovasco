@@ -1,0 +1,9 @@
+h1 Songs
+
+p There are {{songsCount}} songs.
+
+ul
+  each
+    li
+      h2.title = title
+      .text = text
