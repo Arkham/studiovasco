@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
 gem 'ember-rails'
 gem 'emblem-rails'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'spring'

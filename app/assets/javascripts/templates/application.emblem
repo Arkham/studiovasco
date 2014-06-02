@@ -1,4 +1,26 @@
-h1 HELLO
+header.navbar.navbar-static-top
+  .container
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
 
-.content
-  outlet
+      a.navbar-brand href="/" StudioVasco
+
+    nav.collapse.navbar-collapse.bs-navbar-collapse role="navigation"
+      ul.nav.navbar-nav
+        li
+          a href="#" Home
+        li
+          a href="#" Songs
+
+.banner
+  .container
+    h1 StudioVasco
+    p Un concerto. Una notte. Troppe canzoni da imparare.
+
+main.content role="main"
+  .container
+    outlet
