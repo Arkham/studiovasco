@@ -1,9 +1,11 @@
 h1.page-header Songs
 
-p There are {{songsCount}} songs.
-
 ul
-  each
+  each itemController="song"
     li
-      h3.title = title
+      if isEditing
+        input value=title
+      else
+        h3.title{action "editTitle"} = title
+
       .text = text
