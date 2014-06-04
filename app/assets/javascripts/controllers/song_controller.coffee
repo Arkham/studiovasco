@@ -3,4 +3,8 @@ Studiovasco.SongController = Ember.ObjectController.extend
     editTitle: ->
       @set('isEditing', true)
 
+    save: ->
+      @set('isEditing', false)
+      @get('model').save()
+
   isEditing: false

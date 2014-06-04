@@ -8,3 +8,8 @@
 
 window.Studiovasco = Ember.Application.create
   LOG_TRANSITIONS: true
+
+$ ->
+  token = $('meta[name="csrf-token"]').attr('content')
+  $.ajaxPrefilter (options, originalOptions, xhr) ->
+    xhr.setRequestHeader('X-CSRF-Token', token)

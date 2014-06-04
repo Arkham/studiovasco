@@ -1,5 +1,5 @@
 if isEditing
-  input.form-control type="text" value=title
+  edit-title class="form-control" value=title focus-out="save" insert-newline="save"
 else
   h1.title{action "editTitle"} = title
 
