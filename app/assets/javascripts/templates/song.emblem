@@ -1,8 +1,14 @@
-if isEditing
-  edit-title class="form-control" value=title focus-out="save" insert-newline="save"
-else
-  h1.title{action "editTitle"} = title
+.song
+  if isEditingTitle
+    edit-title class="form-control edit-title" value=title focus-out="save" insert-newline="save"
+  else
+    h1.title{action "editTitle"} = title
 
-hr
+  hr
 
-.text = text
+  if isEditingText
+    edit-text class="form-control" rows=10 value=text focus-out="save"
+    br
+    button{action "save"} class="btn btn-primary" Salva
+  else
+    .text{action "editText"} = format-markdown text

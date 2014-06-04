@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 ruby '2.1.1'
 
@@ -15,6 +16,9 @@ gem 'slim-rails'
 gem 'ember-rails'
 gem 'emblem-rails'
 gem 'bootstrap-sass'
+
+gem 'rails-assets-showdown'
+gem 'rails-assets-holderjs'
 
 group :development do
   gem 'spring'

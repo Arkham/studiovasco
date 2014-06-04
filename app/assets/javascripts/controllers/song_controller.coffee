@@ -1,10 +1,15 @@
 Studiovasco.SongController = Ember.ObjectController.extend
   actions:
     editTitle: ->
-      @set('isEditing', true)
+      @set('isEditingTitle', true)
+
+    editText: ->
+      @set('isEditingText', true)
 
     save: ->
-      @set('isEditing', false)
+      @set('isEditingTitle', false)
+      @set('isEditingText', false)
       @get('model').save()
 
-  isEditing: false
+  isEditingTitle: false
+  isEditingText: false

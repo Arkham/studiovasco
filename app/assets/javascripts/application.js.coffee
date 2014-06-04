@@ -3,6 +3,8 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require showdown
+#= require holderjs
 #= require_self
 #= require studiovasco
 

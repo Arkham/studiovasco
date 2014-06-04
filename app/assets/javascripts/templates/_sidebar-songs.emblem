@@ -1,0 +1,3 @@
+ul.nav.songs-sidenav
+  each
+    li = link-to 'song' this | {{title}}

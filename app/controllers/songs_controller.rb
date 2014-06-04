@@ -9,6 +9,10 @@ class SongsController < ApplicationController
     respond_with song
   end
 
+  def create
+    respond_with Song.create(song_params)
+  end
+
   def update
     respond_with song.update(song_params)
   end

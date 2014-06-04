@@ -1,0 +1,15 @@
+form.form-horizontal.song-form
+  .col-sm-10
+    .form-group
+      label.col-sm-1.control-label Titolo
+      .col-sm-11
+        input type="text" value=title class="form-control"
+
+    .form-group
+      label.col-sm-1.control-label Testo
+      .col-sm-11
+        textarea value=text rows="10" class="form-control"
+
+    .form-group
+      .col-sm-offset-1.col-sm-11
+        button type="submit" class="btn btn-primary" Aggiungi una canzone

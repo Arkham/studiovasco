@@ -7,19 +7,17 @@ header.navbar.navbar-static-top
         span.icon-bar
         span.icon-bar
 
-      a.navbar-brand href="#" StudioVasco
+      link-to 'home' class="navbar-brand" | StudioVasco
 
     nav.collapse.navbar-collapse.bs-navbar-collapse role="navigation"
       ul.nav.navbar-nav
         li
-          a href="#" Home
-        li
-          a href="#" Songs
+          link-to 'songs.new' | Aggiungi una canzone
 
 .banner
   .container
     h1 StudioVasco
-    p Un concerto. Una notte. Troppe canzoni da imparare.
+    p Un concerto. Una sola notte. Troppe canzoni da imparare.
 
 main.content role="main"
   .container

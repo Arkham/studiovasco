@@ -3,7 +3,4 @@
     outlet
 
   .col-md-3
-    ul.nav.songs-sidenav
-      each
-        li = link-to 'song' this | {{title}}
-
+    partial "sidebar-songs"
