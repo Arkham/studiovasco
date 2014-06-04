@@ -1,11 +1,9 @@
-h1.page-header Songs
+.row
+  .col-md-9
+    outlet
 
-ul
-  each itemController="song"
-    li
-      if isEditing
-        input value=title
-      else
-        h3.title{action "editTitle"} = title
+  .col-md-3
+    ul.nav.songs-sidenav
+      each
+        li = link-to 'song' this | {{title}}
 
-      .text = text

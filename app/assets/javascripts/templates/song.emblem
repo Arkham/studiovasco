@@ -1,0 +1,8 @@
+if isEditing
+  input.form-control type="text" value=title
+else
+  h1.title{action "editTitle"} = title
+
+hr
+
+.text = text
