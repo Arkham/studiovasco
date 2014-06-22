@@ -1,4 +1,7 @@
+h4
+  | Canzoni imparate 
+  span.badge = filteredSongs.length
+
 ul.nav.songs-sidenav
-  each
-    if title
-      li = link-to 'song' this | {{title}}
+  each song in filteredSongs
+    li = link-to 'song' song | {{song.title}}
