@@ -3,13 +3,25 @@ form.form-horizontal.song-form
     .form-group
       label.col-sm-1.control-label Titolo
       .col-sm-11
-        input type="text" value=title class="form-control"
+        = input value=title type="text" class="form-control"
+
+        if errors.title
+          .help-block
+            each error in errors.title
+              div
+                p.label.label-danger = error.message
 
     .form-group
       label.col-sm-1.control-label Testo
       .col-sm-11
-        textarea value=text rows="10" class="form-control"
+        = textarea value=text rows="10" class="form-control"
+
+        if errors.text
+          .help-block
+            each error in errors.text
+              div
+                p.label.label-danger = error.message
 
     .form-group
       .col-sm-offset-1.col-sm-11
-        button type="submit" class="btn btn-primary" Aggiungi una canzone
+        button{action "create"} type="submit" class="btn btn-primary" Aggiungi una canzone
