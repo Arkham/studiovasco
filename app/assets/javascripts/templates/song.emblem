@@ -1,4 +1,7 @@
 .song
+  .pull-right
+    button{action "delete"} class="btn btn-danger" Delete
+
   if isEditingTitle
     edit-title class="form-control edit-title" value=title focus-out="save" insert-newline="save"
   else

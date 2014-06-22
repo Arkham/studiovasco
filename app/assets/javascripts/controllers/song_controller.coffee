@@ -11,5 +11,11 @@ Studiovasco.SongController = Ember.ObjectController.extend
       @set('isEditingText', false)
       @get('model').save()
 
+    delete: ->
+      if window.confirm("Are you sure you want to delete this song?")
+        @get('model').deleteRecord()
+        @get('model').save().then =>
+          @transitionToRoute('home')
+
   isEditingTitle: false
   isEditingText: false

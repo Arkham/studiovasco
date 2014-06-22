@@ -17,6 +17,10 @@ class SongsController < ApplicationController
     respond_with song.update(song_params)
   end
 
+  def destroy
+    respond_with song.destroy
+  end
+
 private
 
   def song
