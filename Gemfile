@@ -18,6 +18,7 @@ gem 'slim-rails'
 gem 'ember-rails'
 gem 'emblem-rails'
 gem 'bootstrap-sass'
+gem 'newrelic_rpm'
 
 gem 'rails-assets-showdown'
 gem 'rails-assets-holderjs'
