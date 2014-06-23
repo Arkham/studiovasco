@@ -10,7 +10,8 @@ class Api::V1::SongsController < ApplicationController
   end
 
   def create
-    respond_with :api, :v1, Song.create(song_params)
+    song = Song.create(song_params)
+    respond_with song, location: api_v1_song_url(song)
   end
 
   def update
