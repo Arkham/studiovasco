@@ -3,6 +3,7 @@
     | Scaletta 
     span.badge = filteredSongs.length
 
-  ul.nav
+  ul.nav.sortable
     each song in filteredSongs
-      li = link-to 'song' song | {{song.title}}
+      li.item data-id=song.id
+        = link-to 'song' song | #{song.position}. #{song.title}

@@ -2,7 +2,7 @@ class Api::V1::SongsController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Song.all
+    respond_with Song.all.order(:position)
   end
 
   def show
@@ -28,6 +28,6 @@ private
   end
 
   def song_params
-    params.require(:song).permit(:title, :text)
+    params.require(:song).permit(:title, :text, :position)
   end
 end

@@ -5,6 +5,7 @@
 #= require ember-data
 #= require showdown
 #= require holderjs
+#= require jquery.ui.sortable
 #= require_self
 #= require studiovasco
 
