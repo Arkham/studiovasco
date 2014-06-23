@@ -1,7 +1,8 @@
-h4
-  | Canzoni imparate 
-  span.badge = filteredSongs.length
+.songs-sidenav
+  p.title
+    | Scaletta 
+    span.badge = filteredSongs.length
 
-ul.nav.songs-sidenav
-  each song in filteredSongs
-    li = link-to 'song' song | {{song.title}}
+  ul.nav
+    each song in filteredSongs
+      li = link-to 'song' song | {{song.title}}
