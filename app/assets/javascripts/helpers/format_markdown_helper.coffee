@@ -1,5 +1,11 @@
 showdown = new Showdown.converter()
 
 Ember.Handlebars.helper('format-markdown', (input) ->
-  return new Handlebars.SafeString(showdown.makeHtml(input.replace(/\n/g, '<br>')))
+  sanitized = []
+
+  for token in input.split("\n")
+    token += "<br>" if token.match(/^[a-z]/i)
+    sanitized.push token
+
+  return new Handlebars.SafeString(showdown.makeHtml(sanitized.join("\n")))
 )
