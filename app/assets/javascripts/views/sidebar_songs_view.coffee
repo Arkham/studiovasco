@@ -1,4 +1,6 @@
-Studiovasco.SongsView = Ember.View.extend
+Studiovasco.SidebarSongsView = Ember.View.extend
+  templateName: 'sidebar_songs'
+
   didInsertElement: ->
     controller = @get('controller')
 

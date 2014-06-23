@@ -3,4 +3,4 @@
     outlet
 
   .col-md-3
-    partial "sidebar-songs"
+    view Studiovasco.SidebarSongsView

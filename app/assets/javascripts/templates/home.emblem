@@ -34,4 +34,4 @@
           a class="btn btn-default" href="#" role="button" View details &raquo;
 
   .col-md-3
-    partial "sidebar-songs"
+    view Studiovasco.SidebarSongsView
