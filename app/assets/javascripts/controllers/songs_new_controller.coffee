@@ -1,4 +1,7 @@
 Studiovasco.SongsNewController = Ember.ObjectController.extend
+  needs: "songs"
+  songs: Ember.computed.alias("controllers.songs")
+
   actions:
     create: ->
       song = @get('model')
